@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="fav_icon.png"/>
+        <title>AgenDate</title>
+    </head>
+<body>
+    <div>
+        <div class="navbar">
+            <h1>Citas registradas</h1> <br>
+        </div><br><br>
+    
+        <div>
+            <table id="tabla" border="1px">
+                <tr>
+                    <th>Usuario</th>
+                    <th>Profesionisa</th>
+                    <th>Fecha y hora</th>
+                    <th>Precio</th>
+                </tr>          
+            </table> <br><br><br>
+    
+            <form id="agregar" class="form" >   
+                <label for="Profesionisa">Ingresa la persona que te atendera: </label><br>
+                <select id="Profesionisa">
+                    <option value="non">selecciona una opcion</option>
+                    <option value="jaimito">jaimito</option>
+                    <option value="cr7">cr7</option>
+                    <option value="drpolo">Dr. Polo</option>
+                </select> <br>
+    
+                <label for="Date">Ingresa la Fecha: </label><br>
+                <input id="Date" type="date" required> <br>
+
+                <label for="Time">Ingresa la Hora: </label><br>
+                <input id="Time" type="time" placeholder="Time" required><br><br>
+    
+                <button id="submit" type="button" onclick="guardar()">Agregar Cita</button>
+            </form><br>  
+    </div>
+</body>
+    <script src="../src/register.js"></script>
+</html>
